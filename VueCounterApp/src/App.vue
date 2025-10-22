@@ -3,15 +3,32 @@ import { ref } from 'vue'
 
 const count = ref(0)
 </script>
+<!-- <script>
+export default({
+  data(){
+    return{
+      count : 0
+    }
+  },
+  methods:{
+    decrement(){
+      this.count++
+    },
+    increment(){
+      this.count--  
+    }
 
+  }
+})
+</script> -->
 <template>
   <main>
     <div class="counter-card">
       <h2 class="title">The Current Count is...</h2>
       <h1 class="count">{{ count }}</h1>
       <div class="buttons">
-        <button class="btn decrement" @click="count--">−</button>
-        <button class="btn increment" @click="count++">+</button>
+        <button class="btn decrement">−</button>
+        <button class="btn increment">+</button>button>
       </div>
     </div>
   </main>
